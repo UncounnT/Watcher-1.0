@@ -2,7 +2,7 @@
 """
 watcher_checker.py
 
-Jednopláťový skript (no chat integration) který:
+Jednopláťový skript který:
 - stáhne HTML z dané URL,
 - vytáhne cenu, dostupnost a sekci "podrobnosti",
 - uloží poslední stav do SQLite,
