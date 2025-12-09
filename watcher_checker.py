@@ -4,15 +4,13 @@ watcher_checker.py
 
 Jednopláťový skript který:
 - stáhne HTML z dané URL,
-- vytáhne cenu, dostupnost a sekci "podrobnosti",
+- vytáhne cenu, dostupnost a další "podrobnosti",
 - uloží poslední stav do SQLite,
 - porovná s předchozím stavem a vrátí (vytiskne) zda a co se změnilo.
 
 Použití:
-  python watcher_checker.py https://example.com/product/123
+  python watcher_checker.py https://uncounnt.github.io/Watccher-2.0/
 
-Závislosti:
-  pip install requests beautifulsoup4
 """
 from __future__ import annotations
 import re
@@ -28,7 +26,7 @@ import logging
 
 # ---- Konfigurace ----
 DB_PATH = "watcher_state.db"
-USER_AGENT = "watcher-checker/1.0 (+https://example.com)"
+USER_AGENT = "watcher-checker/1.0 (https://uncounnt.github.io/Watccher-2.0/)"
 REQUEST_TIMEOUT = 15
 # ----------------------
 
